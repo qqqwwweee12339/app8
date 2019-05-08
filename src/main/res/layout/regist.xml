@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/EzDonor"
+    android:background="@drawable/ezdonor"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -41,5 +41,13 @@
         android:layout_width="fill_parent"
         android:background="@drawable/cycleanytext_shape"
         android:onClick="OnMyRegistClick"
-        android:text="register" />
+        android:text="register as user" />
+
+    <Button
+        android:id="@+id/donorBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OnMyDonorClick"
+        android:text="register as donor"
+        android:visibility="visible" />
 </LinearLayout>

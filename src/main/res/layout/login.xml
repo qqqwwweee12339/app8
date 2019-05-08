@@ -6,7 +6,7 @@
     android:background="@mipmap/bg"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:background="@drawable/EzDonor">
+    tools:background="@drawable/ezdonor">
 
     <TextView
         style="@style/textstyle"
@@ -40,11 +40,19 @@
     <Button
         android:id="@+id/btnLogin"
         style="@style/textstyle"
-        android:layout_width="fill_parent"
+        android:layout_width="384dp"
         android:background="@drawable/cycleanytext_shape"
         android:onClick="OnMyLoginClick"
-        android:text="login" />
+        android:text=" login as user" />
 
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OnMyDonorClick"
+        android:text="login as donor"
+        android:visibility="visible" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -58,6 +66,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
             android:clickable="true"
             android:gravity="center"
             android:onClick="OnMyResPwdClick"
